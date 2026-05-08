@@ -37,6 +37,7 @@ import {
 } from "@/components/ui/accordion"
 import { cn } from "@/lib/utils"
 import { FaWhatsapp } from "react-icons/fa6"
+import { scrollToId } from "@/lib/smooth-scroll"
 
 interface FeatureLink {
   href: string
@@ -259,8 +260,11 @@ const MobileMenu = ({ closeMenu }: { closeMenu: () => void }) => {
             <Link
               key={index}
               href={link.href}
-              onClick={closeMenu}
               className="group relative block border-0 border-b py-4 text-lg"
+              onClick={(e) => {
+                closeMenu()
+                scrollToId(link.href!.split("#")[1]!)(e)
+              }}
             >
               {link.name}
             </Link>
@@ -281,17 +285,23 @@ const NavMenu = () => {
       <NavigationMenuList className="gap-3">
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="#about">About</Link>
+            <Link href="#about" onClick={scrollToId("about")}>
+              About
+            </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="#gallery">Gallery</Link>
+            <Link href="#gallery" onClick={scrollToId("gallery")}>
+              Gallery
+            </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="#contact">Contact</Link>
+            <Link href="#contact" onClick={scrollToId("contact")}>
+              Contact
+            </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

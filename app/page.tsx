@@ -13,14 +13,14 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className="bg-zinc-950/10">
+      <main>
         <HeroSection />
         <Separator />
-        <section id="about">
+        <section id="about" className="scroll-mt-24">
           <MissionSection />
         </section>
         <Separator />
-        <section id="gallery" className="@container">
+        <section id="gallery" className="scroll-mt-24">
           <GallerySection />
         </section>
         <Separator />
@@ -32,7 +32,7 @@ export default function Page() {
         <Separator />
         <ContactGridTwoContactFiveSection />
         <Separator />
-        <section id="contact">
+        <section id="contact" className="scroll-mt-24">
           <CtaSection />
         </section>
       </main>
