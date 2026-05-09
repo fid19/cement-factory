@@ -100,7 +100,7 @@ export function GallerySection() {
                     <video
                       controls
                       preload="metadata"
-                      poster={featuredImages[index]}
+                      // poster={featuredImages[index]}
                       className="aspect-video w-full rounded-lg object-cover"
                     >
                       <source src={src} type="video/mp4" />
