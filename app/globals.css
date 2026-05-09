@@ -137,4 +137,6 @@ html {
   .footer-card-tint :where(.bg-card\/90) {
     @apply bg-foreground/5;
   }
+
+  .xv-min-h { min-height: 100svh; min-height: 100vh; }
 }

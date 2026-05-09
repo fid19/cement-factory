@@ -4,7 +4,7 @@ export default function PrimaryHero() {
   return (
     <section
       data-theme="quartz"
-      className="relative isolate overflow-hidden border-b-2 border-border bg-background"
+      className="xv-min-h relative isolate overflow-hidden border-b-2 border-border bg-background"
     >
       <video
         autoPlay
@@ -15,11 +15,11 @@ export default function PrimaryHero() {
         poster="/gallery/pic-8.jpeg"
         className="absolute inset-0 -z-20 h-full w-full object-cover"
       >
-        <source src="/gallery/vid-1.mp4" type="video/mp4" />
+        <source src="/gallery/construction-site.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 -z-10 bg-black/55" />
-      <div className="absolute inset-0 -z-10 bg-linear-to-b from-black/50 via-black/45 to-black/75" />
+      {/* <div className="absolute inset-0 -z-10 bg-black/10" /> */}
+      <div className="absolute inset-0 -z-10 bg-linear-to-b from-black/40 via-black/45 to-black/75" />
 
       <div className="mx-auto flex min-h-[78svh] max-w-6xl items-center px-6 py-24 md:py-32 lg:min-h-[84svh]">
         <div className="max-w-3xl">

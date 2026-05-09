@@ -62,7 +62,7 @@ export function CoreValuesSection() {
                 data-grid-content
                 className="flex flex-col gap-3 p-6 @4xl:p-12"
               >
-                <value.icon className={cn("size-5", value.iconClassName)} />
+                <value.icon className={cn("size-8", value.iconClassName)} />
                 <h3 className="font-medium text-foreground">{value.title}</h3>
                 <p className="leading-relaxed text-foreground/85">
                   {value.description}

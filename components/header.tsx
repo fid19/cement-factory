@@ -283,21 +283,33 @@ const NavMenu = () => {
       <NavigationMenuList className="gap-3">
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="#about" onClick={scrollToId("about")}>
+            <Link
+              className="text-white"
+              href="#about"
+              onClick={scrollToId("about")}
+            >
               About
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="#gallery" onClick={scrollToId("gallery")}>
+            <Link
+              className="text-white"
+              href="#gallery"
+              onClick={scrollToId("gallery")}
+            >
               Gallery
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="#contact" onClick={scrollToId("contact")}>
+            <Link
+              className="text-white"
+              href="#contact"
+              onClick={scrollToId("contact")}
+            >
               Contact
             </Link>
           </NavigationMenuLink>

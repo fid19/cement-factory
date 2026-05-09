@@ -1,41 +1,6 @@
 import Image from "next/image"
 import { Container } from "@/components/container"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-
-const featuredImages = [
-  "/gallery/pic-8.jpeg",
-  "/gallery/pic-9.jpeg",
-  "/gallery/pic-11.jpeg",
-  "/gallery/pic-12.jpeg",
-  "/gallery/pic-5.jpeg",
-]
-
-const gridImages = [
-  "/gallery/pic-1.jpeg",
-  "/gallery/pic-2.jpeg",
-  "/gallery/pic-3.jpeg",
-  "/gallery/pic-4.jpeg",
-  "/gallery/pic-5.jpeg",
-  "/gallery/pic-6.jpeg",
-  "/gallery/pic-7.jpeg",
-  "/gallery/pic-8.jpeg",
-  "/gallery/pic-9.jpeg",
-  "/gallery/pic-10.jpeg",
-  "/gallery/pic-11.jpeg",
-  "/gallery/pic-12.jpeg",
-]
-
-const videos = [
-  "/gallery/vid-1.mp4",
-  "/gallery/vid-2.mp4",
-  "/gallery/vid-3.mp4",
-]
+import { GalleryCarousel } from "../gallery-carousel"
 
 export function GallerySection() {
   return (
@@ -62,27 +27,22 @@ export function GallerySection() {
               </p>
             </div>
 
-            <div data-grid-content className="p-6 @4xl:p-12">
-              <Carousel className="w-full">
-                <CarouselContent>
-                  {featuredImages.map((src) => (
-                    <CarouselItem key={src}>
-                      <div className="relative aspect-video overflow-hidden rounded-xl">
-                        <Image
-                          src={src}
-                          alt="Featured cement factory scene"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
+            <div className="relative w-full p-6 @4xl:p-12">
+              <video
+                preload="metadata"
+                // poster={featuredImages[index]}
+                autoPlay={true}
+                muted={true}
+                loop={true}
+                playsInline
+                className="aspect-video w-full rounded-lg object-cover"
+              >
+                <source src={"/gallery/vid-1.mp4"} type="video/mp4" />
+              </video>
             </div>
-            <div data-grid-content className="p-6 @4xl:p-12">
+
+            <GalleryCarousel />
+            {/* <div data-grid-content className="p-6 @4xl:p-12">
               <div className="grid gap-px sm:grid-cols-2 @4xl:grid-cols-4">
                 {gridImages.map((src) => (
                   <div key={src} data-grid-content className="p-3">
@@ -114,7 +74,7 @@ export function GallerySection() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* <div
