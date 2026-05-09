@@ -18,15 +18,15 @@ export function MissionSection() {
                 Our Mission
               </h2>
               <div className="mt-6 space-y-4 text-xl font-medium text-muted-foreground *:leading-relaxed *:text-balance">
-                <p className="text-balance text-foreground/85">
-                  <span className="text-2xl text-balance text-green-500">
+                <p className="text-lg text-balance text-foreground/85 sm:text-xl">
+                  <span className="text-xl text-balance text-green-500 sm:text-2xl">
                     We believe strong communities are built on strong materials
                   </span>{" "}
                   — from homes and schools to roads and industrial sites that
                   demand dependable cement solutions.
                 </p>
-                <p className="text-balance text-foreground/85">
-                  <span className="text-2xl text-balance text-green-500">
+                <p className="text-lg text-balance text-foreground/85 sm:text-xl">
+                  <span className="text-xl text-balance text-green-500 sm:text-2xl">
                     Our mission is to produce high-grade cement and concrete
                     blocks with uncompromising quality.
                   </span>{" "}

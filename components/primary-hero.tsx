@@ -29,7 +29,7 @@ export default function PrimaryHero() {
             100% Quality Guaranteed{" "}
             <ThumbsUp className="ml-1 size-4 stroke-3 text-green-500" />
           </p>
-          <h1 className="mt-6 text-3xl leading-[1.2] font-semibold text-balance text-white sm:text-5xl md:text-6xl">
+          <h1 className="mt-6 text-4xl leading-[1.2] font-semibold text-balance text-white sm:text-5xl md:text-6xl">
             Building materials{" "}
             <span className="text-green-500">engineered</span> for strength,
             speed, and reliability
