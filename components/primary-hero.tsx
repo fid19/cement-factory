@@ -21,7 +21,7 @@ export default function PrimaryHero() {
       {/* <div className="absolute inset-0 -z-10 bg-black/10" /> */}
       <div className="absolute inset-0 -z-10 bg-linear-to-b from-black/40 via-black/70 to-black/75" />
 
-      <div className="mx-auto flex min-h-[78svh] max-w-6xl items-center px-6 py-24 md:py-32 lg:min-h-[84svh]">
+      <div className="mx-auto flex min-h-[78svh] max-w-6xl items-center px-6 py-24 md:py-32 lg:min-h-[84svh] lg:px-12">
         <div className="max-w-3xl">
           <p className="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm font-medium tracking-wide text-white/90 backdrop-blur-sm">
             100% Quality Guaranteed{" "}

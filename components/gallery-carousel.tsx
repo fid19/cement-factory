@@ -20,7 +20,7 @@ export function GalleryCarousel() {
           delay: 5000,
         }),
       ]}
-      className="w-full p-6 @4xl:p-12"
+      className="w-full p-6"
     >
       <CarouselContent>
         {gridImages.map((src) => (

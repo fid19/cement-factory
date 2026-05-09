@@ -16,14 +16,12 @@ export function ContactGridTwoContactFiveSection() {
       id="contact-sales"
       className="scroll-mt-24 border-b-2 bg-card/90 py-24 md:py-32"
     >
-      <Container className="px-6 py-3 @4xl:px-12">
-        <span className="text-sm font-semibold tracking-[0.14em] text-muted-foreground uppercase">
+      <Container asGrid>
+        <span className="px-6! text-sm font-semibold tracking-[0.14em] text-muted-foreground uppercase">
           Sales
         </span>
-      </Container>
-      <Container asGrid>
         <div className="grid gap-px @4xl:grid-cols-2">
-          <div data-grid-content className="p-6 @4xl:p-12">
+          <div data-grid-content className="p-6">
             <h2 className="text-5xl font-semibold tracking-tight text-balance text-foreground">
               Ready to scale your next construction project?
             </h2>
@@ -83,7 +81,7 @@ export function ContactGridTwoContactFiveSection() {
             </div>
           </div>
 
-          <div data-grid-content className="p-6 @4xl:p-12">
+          <div data-grid-content className="p-6">
             <h3 className="font-medium text-foreground">Talk to our team</h3>
             <p className="mt-2 mb-12 text-sm text-muted-foreground">
               Fill out the form and we will get back to you within 24 hours.

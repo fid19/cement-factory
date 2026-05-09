@@ -16,7 +16,7 @@ export function GallerySection() {
                     </div> */}
 
           <div className="col-span-full grid gap-px">
-            <div data-grid-content className="p-6 @4xl:p-12">
+            <div data-grid-content className="p-6">
               <h2 className="text-sm font-semibold tracking-[0.14em] text-muted-foreground uppercase">
                 Factory Gallery
               </h2>
@@ -40,10 +40,7 @@ export function GallerySection() {
               </div> */}
             </div>
 
-            <div
-              data-grid-content
-              className="relative overflow-hidden p-3 sm:p-4 @4xl:p-6"
-            >
+            <div data-grid-content className="relative overflow-hidden p-6">
               <video
                 preload="metadata"
                 autoPlay

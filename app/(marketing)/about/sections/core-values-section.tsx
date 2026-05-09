@@ -40,7 +40,7 @@ export function CoreValuesSection() {
       className="scroll-mt-24 bg-card/90 py-24 md:py-32"
     >
       <Container asGrid>
-        <div className="grid grid-cols-10 gap-px">
+        <div className="grid grid-cols-10 gap-px px-6">
           <div aria-hidden className="max-sm:hidden">
             <div data-grid-content />
           </div>
