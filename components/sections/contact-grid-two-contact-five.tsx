@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { CheckCircle2 } from "lucide-react"
-import { Container } from "@/components/container"
+import { Container, Separator } from "@/components/container"
 import { EnterpriseForm } from "@/components/enterprise-form"
 
 const benefits = [

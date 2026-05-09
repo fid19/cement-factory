@@ -22,9 +22,9 @@ export function GalleryCarousel() {
       ]}
       className="w-full p-6"
     >
-      <CarouselContent>
+      <CarouselContent className="">
         {gridImages.map((src) => (
-          <CarouselItem key={src} className="basis-1/2 pl-1 lg:basis-1/3">
+          <CarouselItem key={src} className="basis-full pl-1 lg:basis-1/2">
             <div className="relative aspect-video w-full overflow-hidden rounded-xl">
               <Image
                 src={src}

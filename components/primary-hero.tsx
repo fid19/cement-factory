@@ -1,4 +1,6 @@
 import { Percent, ThumbsUp } from "lucide-react"
+import Link from "next/link"
+import { FaWhatsapp } from "react-icons/fa6"
 
 export default function PrimaryHero() {
   return (
@@ -45,7 +47,7 @@ export default function PrimaryHero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-background transition hover:bg-white/90"
+              className="rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background transition hover:bg-foreground/90"
             >
               Contact Us
             </a>
