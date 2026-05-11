@@ -1,7 +1,12 @@
 import { cn } from "@/lib/utils"
 
 type DoodleVariant = "waves" | "blueprint" | "rings" | "zigzag" | "crosshatch"
-type DoodlePlacement = "top-right" | "top-left" | "bottom-right" | "bottom-left" | "center"
+type DoodlePlacement =
+  | "top-right"
+  | "top-left"
+  | "bottom-right"
+  | "bottom-left"
+  | "center"
 
 type SectionDoodleOverlayProps = {
   className?: string
@@ -34,7 +39,7 @@ export function SectionDoodleOverlay({
       <svg
         viewBox="0 0 400 400"
         fill="none"
-        className="doodle-slow-drift h-full w-full text-foreground/35"
+        className="doodle-slow-drift h-full w-full"
       >
         {variant === "waves" && (
           <g
@@ -51,7 +56,11 @@ export function SectionDoodleOverlay({
         )}
 
         {variant === "blueprint" && (
-          <g stroke="currentColor" strokeWidth="1.1" className="doodle-stroke-shift">
+          <g
+            stroke="currentColor"
+            strokeWidth="1.1"
+            className="doodle-stroke-shift"
+          >
             <path d="M56 68h208v208H56z" />
             <path d="M112 68v208M168 68v208M56 124h208M56 180h208" />
             <circle cx="304" cy="120" r="52" />
@@ -90,7 +99,11 @@ export function SectionDoodleOverlay({
         )}
 
         {variant === "crosshatch" && (
-          <g stroke="currentColor" strokeWidth="1.05" className="doodle-soft-float">
+          <g
+            stroke="currentColor"
+            strokeWidth="1.05"
+            className="doodle-soft-float"
+          >
             <path d="M44 74h312M44 118h312M44 162h312M44 206h312M44 250h312M44 294h312" />
             <path d="M74 44v312M128 44v312M182 44v312M236 44v312M290 44v312M344 44v312" />
             <path d="M52 344l88-88M144 344l88-88M236 344l88-88" />

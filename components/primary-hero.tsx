@@ -13,10 +13,10 @@ export default function PrimaryHero() {
         loop
         playsInline
         preload="metadata"
-        poster="/gallery/construction-site.png"
+        poster="/gallery/block-background.png"
         className="absolute inset-0 -z-20 h-full w-full object-cover"
       >
-        <source src="/gallery/construction-site.mp4" type="video/mp4" />
+        <source src="/gallery/block-background.mp4" type="video/mp4" />
       </video>
 
       {/* <div className="absolute inset-0 -z-10 bg-black/10" /> */}
@@ -31,16 +31,14 @@ export default function PrimaryHero() {
         <div className="max-w-3xl">
           <p className="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm font-medium tracking-wide text-white/90 backdrop-blur-sm">
             100% Quality Guaranteed{" "}
-            <ThumbsUp className="ml-1 size-4 stroke-3 text-green-500" />
+            <ThumbsUp className="ml-1 size-4 stroke-3 text-green-600" />
           </p>
           <h1 className="mt-6 text-4xl leading-[1.2] font-semibold text-balance text-white sm:text-5xl md:text-6xl">
-            Building materials{" "}
-            <span className="text-green-500">engineered</span> for strength,
-            speed, and reliability
+            Building the foundation of every great structure
           </h1>
           <h3 className="mt-6 max-w-lg text-lg leading-snug font-normal text-white/85 md:text-xl lg:max-w-2xl">
             We produce{" "}
-            <span className="font-medium text-green-500 underline underline-offset-2">
+            <span className="font-medium text-green-600 underline underline-offset-2">
               premium
             </span>{" "}
             cement and precision concrete blocks with consistent quality

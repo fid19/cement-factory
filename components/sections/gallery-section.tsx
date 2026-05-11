@@ -27,8 +27,8 @@ export function GallerySection() {
                 Factory Gallery
               </h2>
               <p className="mt-6 max-w-3xl text-3xl leading-[1.2] font-semibold text-balance text-foreground sm:text-4xl md:text-5xl">
-                Explore our plant operations, equipment, and finished products
-                in photos and videos.
+                A behind-the-scenes look at our plant, equipment, and finished
+                products.
               </p>
               {/* <div className="mt-6 flex flex-wrap gap-2">
                 {[
@@ -60,7 +60,7 @@ export function GallerySection() {
               </video>
               <div className="pointer-events-none absolute inset-3 rounded-xl bg-linear-to-t from-black/65 via-black/10 to-transparent sm:inset-4 @4xl:inset-6" />
               <div className="pointer-events-none absolute right-6 bottom-6 left-6 text-white sm:right-8 sm:bottom-8 sm:left-8 @4xl:right-10 @4xl:bottom-10 @4xl:left-10">
-                <p className="text-xs font-semibold tracking-[0.16em] text-white/80 uppercase">
+                <p className="text-xs font-semibold tracking-[0.16em] text-green-500 uppercase">
                   Featured Media
                 </p>
                 <p className="mt-2 text-lg font-semibold text-balance sm:text-2xl">
