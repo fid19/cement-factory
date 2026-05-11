@@ -21,7 +21,7 @@ export default function ContentSection() {
 
         <div className="mt-12 grid gap-12 md:grid-cols-2">
           <div className="row-span-3 grid grid-rows-subgrid gap-2">
-            <h3 className="text-base font-semibold text-balance text-foreground">
+            <h3 className="text-base font-semibold text-balance text-foreground dark:text-background">
               Concrete Blocks
             </h3>
             <p className="mb-4 text-base text-muted-foreground dark:text-background/80">
@@ -42,7 +42,7 @@ export default function ContentSection() {
             </AspectRatio>
           </div>
           <div className="row-span-3 grid grid-rows-subgrid gap-2">
-            <h3 className="text-base font-semibold text-balance text-foreground">
+            <h3 className="text-base font-semibold text-balance text-foreground dark:text-background">
               Parking Tiles
             </h3>
             <p className="mb-4 text-base text-muted-foreground dark:text-background/80">
@@ -63,7 +63,7 @@ export default function ContentSection() {
             </AspectRatio>
           </div>
           <div className="row-span-3 grid grid-rows-subgrid gap-2">
-            <h3 className="text-base font-semibold text-balance text-foreground">
+            <h3 className="text-base font-semibold text-balance text-foreground dark:text-background">
               Paver Blocks
             </h3>
             <p className="mb-4 text-base text-muted-foreground dark:text-background/80">
@@ -84,7 +84,7 @@ export default function ContentSection() {
             </AspectRatio>
           </div>
           <div className="row-span-3 grid grid-rows-subgrid gap-2">
-            <h3 className="text-base font-semibold text-balance text-foreground">
+            <h3 className="text-base font-semibold text-balance text-foreground dark:text-background">
               Readymade Walls
             </h3>
             <p className="mb-4 text-base text-muted-foreground dark:text-background/80">
