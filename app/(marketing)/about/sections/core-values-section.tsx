@@ -1,18 +1,28 @@
-import { Construction, Factory, Leaf, ShieldCheck } from "lucide-react"
+import {
+  CheckCheck,
+  CheckCircle2,
+  CheckCircle2Icon,
+  Construction,
+  Factory,
+  Leaf,
+  ShieldCheck,
+} from "lucide-react"
 import { Container } from "@/components/container"
 import { cn } from "@/lib/utils"
 import { SectionDoodleOverlay } from "@/components/ui/section-doodle-overlay"
+import { GiSafetyPin } from "react-icons/gi"
+import { MdOutlineHealthAndSafety } from "react-icons/md"
 
 const values = [
   {
-    icon: Construction,
+    icon: CheckCircle2,
     title: "Quality First",
     iconClassName: "text-green-700",
     description:
       "Every batch is tested for strength, consistency, and durability before leaving our plant.",
   },
   {
-    icon: ShieldCheck,
+    icon: MdOutlineHealthAndSafety,
     title: "Worker Safety",
     iconClassName: "text-yellow-700",
     description:

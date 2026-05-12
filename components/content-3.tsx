@@ -33,7 +33,7 @@ export default function ContentSection() {
                 className="aspect-square size-full rounded-xl object-cover"
               />
             </AspectRatio>
-            <div>
+            <div className="mt-2 space-y-1">
               <h3 className="self-start text-base font-semibold text-balance text-foreground dark:text-background">
                 Concrete Blocks
               </h3>
@@ -56,7 +56,7 @@ export default function ContentSection() {
                 className="size-full rounded-xl object-cover"
               />
             </AspectRatio>
-            <div>
+            <div className="mt-2 space-y-1">
               <h3 className="text-base font-semibold text-balance text-foreground dark:text-background">
                 Parking Tiles
               </h3>
@@ -79,7 +79,7 @@ export default function ContentSection() {
                 className="aspect-square size-full rounded-xl object-cover"
               />
             </AspectRatio>
-            <div>
+            <div className="mt-2 space-y-1">
               <h3 className="text-base font-semibold text-balance text-foreground dark:text-background">
                 Paver Blocks
               </h3>
@@ -102,7 +102,7 @@ export default function ContentSection() {
                 className="aspect-square size-full rounded-xl object-cover"
               />
             </AspectRatio>
-            <div>
+            <div className="mt-2 space-y-1">
               <h3 className="text-base font-semibold text-balance text-foreground dark:text-background">
                 Readymade Walls
               </h3>
