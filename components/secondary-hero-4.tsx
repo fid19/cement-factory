@@ -20,9 +20,10 @@ export default function HeroSection() {
         <ImageIllustration />
         <div className="relative mt-6 grid items-end gap-6 md:grid-cols-2">
           <p className="text-lg text-balance text-foreground/85">
-            From premium cement to precision concrete blocks, our factory
-            delivers consistent quality, reliable supply, and on-time delivery
-            for projects of every scale.
+            We manufacture high-quality concrete blocks, parking tiles, paver
+            blocks, and readymade walls with a focus on durability, precision,
+            and dependable delivery for residential, commercial, and industrial
+            projects
           </p>
         </div>
       </div>

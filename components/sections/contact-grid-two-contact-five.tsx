@@ -59,29 +59,28 @@ export function ContactGridTwoContactFiveSection() {
               <div>
                 <h3 className="text-sm text-muted-foreground">Email</h3>
                 <Link
-                  href="mailto:sales@cementfactory.example"
+                  href="mailto:yomnyakamdaktadur@gmail.com"
                   className="text-sm font-medium text-foreground hover:underline hover:decoration-primary"
                 >
-                  sales@cementfactory.example
+                  yomnyakamdaktadur@gmail.com
                 </Link>
               </div>
 
               <div>
                 <h3 className="text-sm text-muted-foreground">Phone</h3>
                 <Link
-                  href="tel:+243900000000"
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=918798516721"
                   className="text-sm font-medium text-foreground hover:underline hover:decoration-primary"
                 >
-                  +000 900 000 000
+                  +91 879 851 (6721)
                 </Link>
               </div>
 
               <div>
                 <h3 className="text-sm text-muted-foreground">Office</h3>
                 <p className="text-sm font-medium text-foreground">
-                  Industrial Area
-                  <br />
-                  Kerala, India
+                  Arunachal Pradesh, India
                 </p>
               </div>
             </div>

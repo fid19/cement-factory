@@ -41,11 +41,9 @@ export default function PrimaryHero() {
             <span className="font-medium text-green-600 underline underline-offset-2">
               premium
             </span>{" "}
-            cement and precision concrete blocks with consistent quality
-            control, trusted logistics, and scalable supply for projects of
-            every size.
+            concrete blocks, parking tiles, paver blocks, and readymade walls
+            with trusted quality and reliable supply.
           </h3>
-
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#contact"

@@ -40,7 +40,10 @@ export function CtaSection() {
                 variant="secondary"
                 className="ring ring-foreground/30"
               >
-                <Link href="#contact">
+                <Link
+                  href="https://api.whatsapp.com/send?phone=918798516721"
+                  target="_blank"
+                >
                   Contact Our Sales Team{" "}
                   <FaWhatsapp className="size-4 text-green-500" />
                 </Link>

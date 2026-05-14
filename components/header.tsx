@@ -193,7 +193,10 @@ export default function HeaderOne() {
               <div className="mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 in-data-[state=active]:flex max-lg:in-data-[state=active]:mt-6 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                   <Button asChild variant="secondary" size="sm">
-                    <Link href="#">
+                    <Link
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=918798516721"
+                    >
                       <span>Request a Quote </span>
                       <FaWhatsapp className="size-4 text-green-500" />
                     </Link>
