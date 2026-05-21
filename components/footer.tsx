@@ -7,16 +7,16 @@ const links = [
     group: "Company",
     items: [
       {
-        title: "About",
-        href: "#about",
+        title: "Gallery",
+        href: "#gallery",
       },
       {
         title: "Products",
         href: "#products",
       },
       {
-        title: "Gallery",
-        href: "#gallery",
+        title: "Our Mission",
+        href: "#mission",
       },
     ],
   },
@@ -42,11 +42,11 @@ const links = [
     items: [
       {
         title: "Privacy Policy",
-        href: "#",
+        href: "/legal/privacy-policy",
       },
       {
         title: "Terms of Service",
-        href: "#",
+        href: "/legal/terms-and-conditions",
       },
     ],
   },

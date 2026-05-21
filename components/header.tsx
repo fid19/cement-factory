@@ -126,9 +126,9 @@ const contentLinks: FeatureLink[] = [
 ]
 
 const mobileLinks: MobileLink[] = [
-  { name: "About", href: "#about" },
   { name: "Gallery", href: "#gallery" },
   { name: "Contact Us", href: "#contact" },
+  { name: "Our Mission", href: "#mission" },
 ]
 
 export default function HeaderOne() {
@@ -283,26 +283,9 @@ const NavMenu = () => {
   return (
     <NavigationMenu
       viewport={false}
-      className="**:hover:text-white **:in-data-scrolled:text-foreground! **:in-data-scrolled:hover:text-foreground! **:data-[slot=navigation-menu-content]:top-10 max-lg:hidden"
+      className="**:hover:text-white **:focus:text-white **:in-data-scrolled:text-foreground! **:in-data-scrolled:hover:text-foreground! **:data-[slot=navigation-menu-content]:top-10 max-lg:hidden"
     >
       <NavigationMenuList className="gap-3">
-        <NavigationMenuItem>
-          <NavigationMenuLink
-            asChild
-            className={cn(
-              navigationMenuTriggerStyle(),
-              "hover:bg-background/15 hover:in-data-scrolled:bg-foreground/10"
-            )}
-          >
-            <Link
-              className="text-white"
-              href="#about"
-              onClick={scrollToId("about")}
-            >
-              About
-            </Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link
@@ -322,6 +305,20 @@ const NavMenu = () => {
               onClick={scrollToId("contact")}
             >
               Contact
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink
+            asChild
+            className={cn(navigationMenuTriggerStyle())}
+          >
+            <Link
+              className="text-white"
+              href="#mission"
+              onClick={scrollToId("mission")}
+            >
+              Our Mission
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>

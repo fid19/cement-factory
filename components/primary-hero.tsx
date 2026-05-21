@@ -1,4 +1,4 @@
-import { ThumbsUp } from "lucide-react"
+import { ChevronDown, ThumbsUp } from "lucide-react"
 import { SectionDoodleOverlay } from "@/components/ui/section-doodle-overlay"
 
 export default function PrimaryHero() {
@@ -7,6 +7,16 @@ export default function PrimaryHero() {
       data-theme="quartz"
       className="xv-min-h relative isolate flex items-center overflow-hidden border-b-2 border-border bg-background max-sm:flex"
     >
+      <div className="absolute inset-x-0 bottom-0 mx-auto">
+        <div className="mx-auto w-fit">
+          <div className="flex flex-col items-center justify-center">
+            <span className="text-sm font-medium text-white uppercase opacity-50">
+              Scroll Down
+            </span>
+            <ChevronDown className="size-10 animate-bounce text-white" />
+          </div>
+        </div>
+      </div>
       <video
         autoPlay
         muted

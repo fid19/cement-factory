@@ -4,7 +4,7 @@ import { SectionDoodleOverlay } from "@/components/ui/section-doodle-overlay"
 export function MissionSection() {
   return (
     <section
-      id="about"
+      id="mission"
       className="relative scroll-mt-24 overflow-hidden border-b-2 bg-card/90 py-24 md:py-32"
     >
       <SectionDoodleOverlay

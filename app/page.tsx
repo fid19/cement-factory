@@ -1,7 +1,6 @@
 import { CoreValuesSection } from "@/app/(marketing)/about/sections/core-values-section"
 import { MissionSection } from "@/app/(marketing)/about/sections/mission-section"
-import FooterSection from "@/components/footer"
-import Header from "@/components/header"
+
 import { ContactGridTwoContactFiveSection } from "@/components/sections/contact-grid-two-contact-five"
 import { CtaSection } from "@/components/sections/cta-section"
 import { GallerySection } from "@/components/sections/gallery-section"
@@ -12,12 +11,14 @@ import { FaWhatsapp } from "react-icons/fa6"
 import Link from "next/link"
 import ContentSection from "@/components/content-3"
 
+import Header from "@/components/header"
+import FooterSection from "@/components/footer"
+
 export default function Page() {
   return (
     <>
       <Header />
       <PrimaryHero />
-      {/* <Separator /> */}
       <HeroSection />
       <MissionSection />
       <ContentSection />
@@ -26,8 +27,6 @@ export default function Page() {
       <StatsSection />
       <ContactGridTwoContactFiveSection />
       <CtaSection />
-
-      <FooterSection />
 
       <div className="fixed right-4 bottom-4 z-50">
         <Link
