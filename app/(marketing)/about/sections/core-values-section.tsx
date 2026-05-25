@@ -17,28 +17,28 @@ const values = [
   {
     icon: CheckCircle2,
     title: "Quality First",
-    iconClassName: "text-green-700",
+    iconClassName: "text-green-600",
     description:
       "Every batch is tested for strength, consistency, and durability before leaving our plant.",
   },
   {
     icon: MdOutlineHealthAndSafety,
     title: "Worker Safety",
-    iconClassName: "text-yellow-700",
+    iconClassName: "text-yellow-600",
     description:
       "We enforce strict safety standards across production lines, loading zones, and delivery operations.",
   },
   {
     icon: Leaf,
     title: "Sustainable Production",
-    iconClassName: "text-blue-700",
+    iconClassName: "text-blue-600",
     description:
       "Our process reduces waste and optimizes resource use to lower environmental impact over time.",
   },
   {
     icon: Factory,
     title: "Industrial Scale",
-    iconClassName: "text-red-700",
+    iconClassName: "text-red-600",
     description:
       "From neighborhood projects to major infrastructure, we deliver dependable volume without sacrificing quality.",
   },
@@ -66,9 +66,11 @@ export function CoreValuesSection() {
               <h2 className="text-balance text-muted-foreground">
                 Core Values
               </h2>
-              <p className="mt-6 max-w-2xl text-3xl leading-[1.2] font-medium text-balance text-foreground md:text-4xl">
-                The principles that guide every production run, quality check,
-                and delivery from our factory.
+              <p className="mt-6 max-w-2xl text-3xl leading-[1.2] font-medium font-semibold text-balance text-foreground sm:text-4xl md:text-5xl">
+                The{" "}
+                <span className="font-semibold text-green-600">principles</span>{" "}
+                that guide every production run, quality check, and delivery
+                from our factory.
               </p>
             </div>
 
@@ -78,9 +80,11 @@ export function CoreValuesSection() {
                 data-grid-content
                 className="flex flex-col gap-3 p-6 @4xl:p-12"
               >
-                <value.icon className={cn("size-8", value.iconClassName)} />
-                <h3 className="font-medium text-foreground">{value.title}</h3>
-                <p className="leading-relaxed text-foreground/85">
+                <value.icon className={cn("size-12", value.iconClassName)} />
+                <h3 className="text-lg font-medium text-foreground">
+                  {value.title}
+                </h3>
+                <p className="text-base leading-relaxed text-foreground">
                   {value.description}
                 </p>
               </div>

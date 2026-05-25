@@ -43,17 +43,16 @@ export default async function LegalDocumentPage({
   return (
     <>
       <section>
-        <div className="absolute h-24 w-full bg-[url('/gallery/texture.jpg')] bg-cover bg-center md:h-32" />
-        <div
-          className="absolute inset-0 h-24 bg-black/50 md:h-32"
-          aria-hidden
-        />
-        <div className="border-b bg-muted/50 py-32 sm:pt-44">
+        <div className="relative py-6 sm:py-12">
+          <div className="absolute inset-0 w-full bg-[url('/gallery/texture.jpg')] bg-cover bg-center opacity-80" />
+          <div className="absolute inset-0 bg-black/50" aria-hidden />
+        </div>
+        <div className="border-b bg-muted/50 pt-24">
           <div className="mx-auto max-w-5xl px-6">
             <div className="group mb-4 flex flex-col items-center justify-center">
               <Link
                 href="/"
-                className="gap-q flex items-center text-sm font-medium text-foreground hover:text-primary"
+                className="gap-q flex items-center text-sm font-medium text-muted-foreground"
               >
                 <ChevronLeft className="size-4 transition-transform duration-300 group-hover:-translate-x-1" />
                 Back to Home

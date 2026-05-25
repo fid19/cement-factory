@@ -126,9 +126,10 @@ const contentLinks: FeatureLink[] = [
 ]
 
 const mobileLinks: MobileLink[] = [
-  { name: "Gallery", href: "#gallery" },
-  { name: "Contact Us", href: "#contact" },
   { name: "Our Mission", href: "#mission" },
+  { name: "Gallery", href: "#gallery" },
+  { name: "Blog", href: "#blogs" },
+  { name: "Contact Us", href: "#contact" },
 ]
 
 export default function HeaderOne() {
@@ -192,13 +193,20 @@ export default function HeaderOne() {
 
               <div className="mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 in-data-[state=active]:flex max-lg:in-data-[state=active]:mt-6 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                  <Button asChild variant="secondary" size="sm">
+                  <Button
+                    asChild
+                    className="group hover:bg-green-500"
+                    variant="secondary"
+                    size="sm"
+                  >
                     <Link
                       target="_blank"
                       href="https://api.whatsapp.com/send?phone=918798516721"
                     >
-                      <span>Request a Quote </span>
-                      <FaWhatsapp className="size-4 text-green-500" />
+                      <span className="group-hover:text-white">
+                        Request a Quote{" "}
+                      </span>
+                      <FaWhatsapp className="size-4 text-green-500 group-hover:text-white" />
                     </Link>
                   </Button>
                 </div>
@@ -287,13 +295,16 @@ const NavMenu = () => {
     >
       <NavigationMenuList className="gap-3">
         <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink
+            asChild
+            className={cn(navigationMenuTriggerStyle())}
+          >
             <Link
               className="text-white"
-              href="#gallery"
-              onClick={scrollToId("gallery")}
+              href="/#mission"
+              // onClick={scrollToId("mission")}
             >
-              Gallery
+              Our Mission
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -301,13 +312,14 @@ const NavMenu = () => {
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
             <Link
               className="text-white"
-              href="#contact"
-              onClick={scrollToId("contact")}
+              href="/#gallery"
+              // onClick={scrollToId("gallery")}
             >
-              Contact
+              Gallery
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
@@ -315,10 +327,22 @@ const NavMenu = () => {
           >
             <Link
               className="text-white"
-              href="#mission"
-              onClick={scrollToId("mission")}
+              href="/#blogs"
+              // onClick={scrollToId("mission")}
             >
-              Our Mission
+              Blog
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link
+              className="text-white"
+              href="/#contact"
+              // onClick={scrollToId("contact")}
+            >
+              Contact
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>

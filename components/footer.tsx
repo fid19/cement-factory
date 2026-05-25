@@ -4,19 +4,23 @@ import { SectionDoodleOverlay } from "@/components/ui/section-doodle-overlay"
 
 const links = [
   {
-    group: "Company",
+    group: "Menu",
     items: [
+      {
+        title: "Our Mission",
+        href: "#mission",
+      },
       {
         title: "Gallery",
         href: "#gallery",
       },
       {
-        title: "Products",
-        href: "#products",
+        title: "Blog",
+        href: "#blogs",
       },
       {
-        title: "Our Mission",
-        href: "#mission",
+        title: "Contact",
+        href: "#contact",
       },
     ],
   },

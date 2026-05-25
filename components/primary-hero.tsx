@@ -1,5 +1,6 @@
-import { ChevronDown, ThumbsUp } from "lucide-react"
+import { Check, ChevronDown, ThumbsUp } from "lucide-react"
 import { SectionDoodleOverlay } from "@/components/ui/section-doodle-overlay"
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function PrimaryHero() {
   return (
@@ -13,7 +14,7 @@ export default function PrimaryHero() {
             <span className="text-sm font-medium text-white uppercase opacity-50">
               Scroll Down
             </span>
-            <ChevronDown className="size-10 animate-bounce text-white" />
+            <ChevronDown className="size-10 animate-bounce text-white/70" />
           </div>
         </div>
       </div>
@@ -39,16 +40,16 @@ export default function PrimaryHero() {
 
       <div className="relative z-10 m-auto flex min-h-[78svh] max-w-6xl items-center px-6 py-24 md:py-32 lg:min-h-[84svh] lg:px-12">
         <div className="max-w-3xl">
-          <p className="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1 text-sm font-medium tracking-wide text-white/90 backdrop-blur-sm">
+          <p className="inline-flex rounded-full border border-green-500 bg-white/10 px-4 py-1 text-xs tracking-wide text-white/90 backdrop-blur-sm">
             100% Quality Guaranteed{" "}
-            <ThumbsUp className="ml-1 size-4 stroke-3 text-green-600" />
+            <Check className="ml-1 size-4 stroke-3 text-green-600" />
           </p>
           <h1 className="mt-6 text-4xl leading-[1.2] font-semibold text-balance text-white sm:text-5xl md:text-6xl">
             Building the foundation of every great structure
           </h1>
           <h3 className="mt-6 max-w-lg text-lg leading-snug font-normal text-white/85 md:text-xl lg:max-w-2xl">
             We produce{" "}
-            <span className="font-medium text-green-600 underline underline-offset-2">
+            <span className="font-medium text-green-500 underline underline-offset-2">
               premium
             </span>{" "}
             concrete blocks, parking tiles, paver blocks, and readymade walls
@@ -57,9 +58,9 @@ export default function PrimaryHero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background transition hover:bg-foreground/90"
+              className="inline-flex items-center gap-2 rounded-full bg-green-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-green-600/80"
             >
-              Contact Us
+              Contact Us <FaWhatsapp className="size-4 text-white" />
             </a>
             <a
               href="#gallery"

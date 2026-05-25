@@ -34,17 +34,54 @@ export function CtaSection() {
                 and product recommendations for residential, commercial, and
                 infrastructure builds.
               </p>
+
+              <div data-grid-content className="w-full">
+                <div className="grid grid-cols-2 justify-between space-y-6 *:space-y-2">
+                  <div>
+                    <h3 className="text-sm text-muted-foreground">Email</h3>
+                    <Link
+                      href="mailto:yomnyakamdaktadur@gmail.com"
+                      className="text-sm font-medium text-foreground hover:underline hover:decoration-primary"
+                    >
+                      yomnyakamdaktadur@gmail.com
+                    </Link>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm text-muted-foreground">Phone</h3>
+                    <Link
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=918798516721"
+                      className="text-sm font-medium text-foreground hover:underline hover:decoration-primary"
+                    >
+                      +91 879 851 (6721)
+                    </Link>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm text-muted-foreground">Office</h3>
+                    <p className="text-sm font-medium text-foreground">
+                      Likabali, Arunachal Pradesh 791111, India <br />
+                      <span className="text-muted-foreground">
+                        Landmark: Near Malinithan Temple
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <Button
                 asChild
                 size="lg"
-                variant="secondary"
-                className="ring ring-foreground/30"
+                variant="ghost"
+                className="group px-6 py-3 text-foreground/70 ring ring-foreground/20 transition-all duration-200 ease-in-out hover:bg-green-600/80 hover:text-white hover:ring-green-600/60"
               >
                 <Link
                   href="https://api.whatsapp.com/send?phone=918798516721"
                   target="_blank"
                 >
-                  Contact Us <FaWhatsapp className="size-6 text-green-500" />
+                  Contact Us{" "}
+                  <FaWhatsapp className="size-6 text-black duration-200 group-hover:text-white" />
                 </Link>
               </Button>
             </div>
