@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card"
 import { useMemo, useState } from "react"
 import { cn } from "@/lib/utils"
 import { useMedia } from "@/hooks/use-media"
-import { Post } from "@/types/post"
+import { Author, Post } from "@/lib/types/post"
 
 const SHADCN_AVATAR = "https://avatars.githubusercontent.com/u/124599?v=4"
 const MESCHAC_AVATAR = "https://avatars.githubusercontent.com/u/47919550?v=4"
@@ -28,16 +28,11 @@ type Filter = "all" | Category
 interface Article {
   title: string
   description: string
-  category: Category
-  image: string
+  category: string
+  image: string | null
   date: string
   href: string
-  authors: Author[]
-}
-
-interface Author {
-  name: string
-  image: string
+  authors: Author[] | null
 }
 
 export default function Blog({ posts }: { posts: Post[] }) {
@@ -78,7 +73,7 @@ export default function Blog({ posts }: { posts: Post[] }) {
       posts.map((post) => ({
         title: post.title,
         description: post.description,
-        category: post.category.title,
+        category: post.category!.title,
         image: post.image,
         date: new Date(post.publishedAt).toLocaleDateString("en-US", {
           month: "long",
@@ -103,7 +98,7 @@ export default function Blog({ posts }: { posts: Post[] }) {
     }
     for (const a of rawArticles) {
       counts.all++
-      counts[a.category]++
+      counts[a.category as Filter]++
     }
     return counts
   }, [rawArticles])
@@ -187,7 +182,7 @@ export default function Blog({ posts }: { posts: Post[] }) {
               <article>
                 <div className="-mx-6 -mt-6 aspect-video overflow-hidden rounded-xl">
                   <Image
-                    src={article.image}
+                    src={article.image!}
                     alt={article.title}
                     width={6394}
                     height={4500}
@@ -216,14 +211,14 @@ export default function Blog({ posts }: { posts: Post[] }) {
 
                 <div className="grid grid-cols-[1fr_auto] items-end gap-2 pt-4">
                   <div className="space-y-2">
-                    {article.authors.map((author, index) => (
+                    {article.authors!.map((author, index) => (
                       <div
                         key={index}
                         className="grid grid-cols-[auto_1fr] items-center gap-2"
                       >
                         <div className="ring-border-illustration aspect-square size-6 overflow-hidden rounded-md border border-transparent bg-card shadow-md ring-1 shadow-black/15">
                           <Image
-                            src={author.image}
+                            src={author.image!}
                             alt={author.name}
                             width={46}
                             height={46}
@@ -300,14 +295,14 @@ export default function Blog({ posts }: { posts: Post[] }) {
 
                     <div className="grid grid-cols-[1fr_auto] items-end gap-2 pt-4">
                       <div className="space-y-2">
-                        {article.authors.map((author, index) => (
+                        {article.authors!.map((author, index) => (
                           <div
                             key={index}
                             className="grid grid-cols-[auto_1fr] items-center gap-2"
                           >
                             <div className="ring-border-illustration aspect-square size-6 overflow-hidden rounded-md border border-transparent bg-card shadow-md ring-1 shadow-black/15">
                               <Image
-                                src={author.image}
+                                src={author.image!}
                                 alt={author.name}
                                 width={46}
                                 height={46}

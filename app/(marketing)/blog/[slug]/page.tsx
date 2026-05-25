@@ -94,7 +94,7 @@ export default async function BlogPostPage({
             <BreadcrumbLink
             //   href={`/libre/blog-one/category/${post.category.slug}`}
             >
-              {post.category.title}
+              {post.category!.title}
             </BreadcrumbLink>
           </BreadcrumbItem>
         </BreadcrumbList>
@@ -112,14 +112,14 @@ export default async function BlogPostPage({
 
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-4">
-              {post.authors.map((author, index) => (
+              {post.authors!.map((author, index) => (
                 <div
                   key={index}
                   className="grid grid-cols-[auto_1fr] items-center gap-2"
                 >
                   <div className="ring-border-illustration aspect-square size-6 overflow-hidden rounded-md border border-transparent bg-card shadow-md ring-1 shadow-black/15">
                     <Image
-                      src={author.image}
+                      src={author.image!}
                       alt={author.name}
                       width={460}
                       height={460}
@@ -166,7 +166,7 @@ export default async function BlogPostPage({
           <div className="max-w-2xl">
             <div className="relative mb-12 overflow-hidden rounded-xl border shadow shadow-black/5">
               <Image
-                src={post.image}
+                src={post.image!}
                 alt={post.title}
                 width={1200}
                 height={675}
