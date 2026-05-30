@@ -140,7 +140,7 @@ html {
     @apply bg-foreground/5;
   }
 
-  .xv-min-h { min-height: 100svh; min-height: 100vh; }
+  .xv-min-h { min-height: 100vh; min-height: 100svh;  }
 
   @keyframes doodleDrift {
     0%, 100% { transform: translate3d(0, 0, 0); }
