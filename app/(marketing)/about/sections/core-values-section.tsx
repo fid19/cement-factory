@@ -76,16 +76,15 @@ export function CoreValuesSection() {
             </div>
 
             <div className="col-span-full grid grid-cols-1 gap-2 p-6 @4xl:grid-cols-2 @4xl:pl-12">
-              <div className="grid gap-8 @4xl:col-span-1">
+              <div className="grid gap-4 divide-y divide-foreground/10 rounded-4xl bg-foreground/5 py-8 @4xl:col-span-1">
                 {values.map((value) => (
                   <div
                     key={value.title}
-                    data-grid-content
-                    className="flex flex-col gap-2"
+                    className="flex flex-col gap-2 px-6 pb-3"
                   >
-                    <span className="flex items-center gap-1">
-                      <value.icon className={cn("size-4")} />
-                      <h3 className="text-sm font-medium text-foreground">
+                    <span className="flex w-fit items-center gap-1 rounded-full px-2 ring ring-foreground/40">
+                      <value.icon className={cn("size-4 text-foreground/70")} />
+                      <h3 className="text-sm text-foreground/70">
                         {value.title}
                       </h3>
                     </span>
