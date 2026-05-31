@@ -49,8 +49,11 @@ export function CtaSection() {
                   Request a quotation
                 </span>
                 <h2 className="mb-4 text-3xl font-semibold text-balance text-foreground sm:text-5xl">
-                  Let&apos;s <span className="text-green-400">build</span> your
-                  next project together
+                  Let&apos;s{" "}
+                  <span className="text-green-500 dark:text-green-400">
+                    build
+                  </span>{" "}
+                  your next project together
                 </h2>
                 <p className="max-w-2xl text-base leading-relaxed text-balance text-muted-foreground sm:text-lg">
                   Tell us about your concrete and block requirements. Our team

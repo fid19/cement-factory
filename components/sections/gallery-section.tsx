@@ -60,7 +60,7 @@ export function GallerySection() {
               </video>
               <div className="pointer-events-none absolute inset-3 rounded-xl bg-linear-to-t from-black/65 via-black/10 to-transparent sm:inset-4 @4xl:inset-6" />
               <div className="pointer-events-none absolute right-6 bottom-6 left-6 text-white sm:right-8 sm:bottom-8 sm:left-8 @4xl:right-10 @4xl:bottom-10 @4xl:left-10">
-                <p className="text-xs font-semibold tracking-[0.16em] text-green-400 uppercase">
+                <p className="text-xs font-semibold tracking-[0.16em] text-green-500 uppercase dark:text-green-400">
                   Featured Media
                 </p>
                 <p className="mt-2 text-lg font-semibold text-balance sm:text-2xl">

@@ -65,7 +65,7 @@ export default function PrimaryHero() {
           </h1>
           <h3 className="mt-6 max-w-lg text-lg leading-snug font-normal text-white/85 md:text-xl lg:max-w-2xl">
             We produce{" "}
-            <span className="font-medium text-green-400 underline underline-offset-2">
+            <span className="font-medium text-green-500 underline underline-offset-2 dark:text-green-400">
               premium
             </span>{" "}
             concrete blocks, parking tiles, paver blocks, and readymade walls

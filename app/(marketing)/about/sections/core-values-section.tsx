@@ -9,32 +9,40 @@ const values = [
   {
     icon: CheckCircle2,
     title: "Quality First",
-    variableColor: "var(--color-green-400)",
-    iconClassName: "group-hover:text-green-400 transition-colors duration-300",
+    accentClassName:
+      "group-hover:text-green-600 dark:group-hover:text-green-400",
+    borderClassName:
+      "hover:border-green-600/50 dark:hover:border-green-400/50",
     description:
       "Every batch is tested for strength, consistency, and durability before leaving our plant.",
   },
   {
     icon: MdOutlineHealthAndSafety,
     title: "Worker Safety",
-    variableColor: "var(--color-yellow-400)",
-    iconClassName: "group-hover:text-yellow-400 transition-colors duration-300",
+    accentClassName:
+      "group-hover:text-yellow-600 dark:group-hover:text-yellow-400",
+    borderClassName:
+      "hover:border-yellow-600/50 dark:hover:border-yellow-400/50",
     description:
       "We enforce strict safety standards across production lines, loading zones, and delivery operations.",
   },
   {
     icon: Leaf,
     title: "Sustainable Production",
-    variableColor: "var(--color-blue-400)",
-    iconClassName: "group-hover:text-blue-400 transition-colors duration-300",
+    accentClassName:
+      "group-hover:text-blue-600 dark:group-hover:text-blue-400",
+    borderClassName:
+      "hover:border-blue-600/50 dark:hover:border-blue-400/50",
     description:
       "Our process reduces waste and optimizes resource use to lower environmental impact over time.",
   },
   {
     icon: Factory,
     title: "Industrial Scale",
-    variableColor: "var(--color-red-400)",
-    iconClassName: "group-hover:text-red-400 transition-colors duration-300",
+    accentClassName:
+      "group-hover:text-red-600 dark:group-hover:text-red-400",
+    borderClassName:
+      "hover:border-red-600/50 dark:hover:border-red-400/50",
     description:
       "From neighborhood projects to major infrastructure, we deliver dependable volume without sacrificing quality.",
   },
@@ -64,7 +72,9 @@ export function CoreValuesSection() {
               </h2>
               <p className="mt-6 max-w-2xl text-3xl leading-[1.2] font-medium font-semibold text-balance text-foreground sm:text-4xl md:text-5xl">
                 The{" "}
-                <span className="font-semibold text-green-400">principles</span>{" "}
+                <span className="font-semibold text-green-600 dark:text-green-400">
+                  principles
+                </span>{" "}
                 that guide every production run, quality check, and delivery
                 from our factory.
               </p>
@@ -75,20 +85,22 @@ export function CoreValuesSection() {
                 {values.map((value) => (
                   <div
                     key={value.title}
-                    className="group point flex flex-col gap-2.5 rounded-xl border border-foreground/10 bg-card px-3 py-6 transition-colors duration-300 select-none hover:border-(--color-value)/50"
-                    style={
-                      {
-                        "--color-value": value.variableColor,
-                      } as React.CSSProperties
-                    }
+                    className={cn(
+                      "group point flex flex-col gap-2.5 rounded-xl border border-foreground/10 bg-card px-3 py-6 transition-colors duration-300 select-none",
+                      value.borderClassName
+                    )}
                   >
                     <span className="flex w-fit flex-col gap-1">
                       <value.icon
-                        className={cn("size-6", value.iconClassName)}
+                        className={cn(
+                          "size-6 text-foreground/70 transition-colors duration-300",
+                          value.accentClassName
+                        )}
                       />
                       <h3
                         className={cn(
-                          "text-sm font-medium text-foreground/80 transition-colors duration-300 group-hover:text-(--color-value)"
+                          "text-sm font-medium text-foreground/80 transition-colors duration-300",
+                          value.accentClassName
                         )}
                       >
                         {value.title}
