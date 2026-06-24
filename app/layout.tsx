@@ -13,6 +13,12 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+export const metadata = {
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
