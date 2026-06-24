@@ -6,7 +6,7 @@ export const FingerprintScanIllustration = () => {
     <div className="relative aspect-square max-w-64">
       <div className="relative flex aspect-square justify-center mask-radial-from-0% mask-radial-to-75%">
         <Image
-          src="/gallery/fingerprint-scan.png"
+          src="/gallery/fingerprint-scanner.png"
           alt="Fingerprint scanner"
           className="size-full scale-110 object-cover"
           width={224}
