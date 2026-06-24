@@ -39,7 +39,7 @@ export function GalleryCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="absolute inset-0 flex items-center justify-between">
+      <div className="mt-2 flex justify-end gap-2">
         <CarouselPrevious />
         <CarouselNext />
       </div>
