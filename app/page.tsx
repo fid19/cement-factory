@@ -14,10 +14,47 @@ import ContentSection from "@/components/content-3"
 import Header from "@/components/header"
 import FooterSection from "@/components/footer"
 import BlogSection from "@/components/sections/blog-section"
+import { siteConfig } from "@/lib/site"
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${siteConfig.url}/#business`,
+  name: siteConfig.name,
+  description: siteConfig.description,
+  url: siteConfig.url,
+  image: `${siteConfig.url}${siteConfig.ogImage}`,
+  telephone: siteConfig.contact.phone,
+  email: siteConfig.contact.email,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: siteConfig.address.locality,
+    addressRegion: siteConfig.address.region,
+    addressCountry: siteConfig.address.country,
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: siteConfig.geo.latitude,
+    longitude: siteConfig.geo.longitude,
+  },
+  makesOffer: [
+    "Concrete blocks",
+    "Paver blocks",
+    "Parking tiles",
+    "Readymade walls",
+  ].map((item) => ({
+    "@type": "Offer",
+    itemOffered: { "@type": "Product", name: item },
+  })),
+}
 
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
       <Header />
       <PrimaryHero />
       <HeroSection />
